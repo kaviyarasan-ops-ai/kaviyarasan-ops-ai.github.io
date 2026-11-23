@@ -174,6 +174,18 @@ h1 .hl{background:linear-gradient(90deg,var(--blue),#5b8def);-webkit-background-
 .bul li{font-size:14.5px;color:var(--ink-2);padding-left:20px;position:relative}
 .bul li::before{content:"";position:absolute;left:2px;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--blue);opacity:.7}
 
+
+/* awards */
+.awg{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:900px}
+@media(max-width:600px){.awg{grid-template-columns:1fr}}
+.aw{position:relative;border:1px solid var(--line);border-radius:var(--r);padding:24px;background:#fff;transition:transform .2s,box-shadow .2s}
+.aw:hover{transform:translateY(-4px);box-shadow:0 18px 40px -28px rgba(15,23,42,.35)}
+.aw-ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px;color:var(--c);background:color-mix(in srgb,var(--c) 12%,#fff)}
+.aw-x{position:absolute;top:22px;right:22px;font-family:var(--head);font-weight:700;font-size:20px;color:#d97706}
+.aw-t{font-family:var(--head);font-size:18px;font-weight:600;margin:14px 0 4px;line-height:1.25}
+.aw-o{font-size:12.5px;color:var(--blue);font-weight:600;margin-bottom:10px}
+.aw p{font-size:13.5px;color:var(--ink-2)}
+
 /* approach */
 .apg{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:900px){.apg{grid-template-columns:1fr 1fr}}
@@ -293,7 +305,7 @@ h1 .hl{background:linear-gradient(90deg,var(--blue),#5b8def);-webkit-background-
 <nav class="nav">
   <div class="wrap">
     <a href="#top" class="logo" data-home>Kaviyarasan <span>V</span></a>
-    <div class="navlinks"><a href="#projects" data-home>Projects</a><a href="#ai-projects" data-home>AI Projects</a><a href="#experience" data-home>Experience</a><a href="#approach" data-home>Approach</a><a href="#timeline" data-home>Writing</a></div>
+    <div class="navlinks"><a href="#projects" data-home>Projects</a><a href="#ai-projects" data-home>AI Projects</a><a href="#experience" data-home>Experience</a><a href="#awards" data-home>Awards</a><a href="#approach" data-home>Approach</a><a href="#timeline" data-home>Writing</a></div>
   </div>
 </nav>
 
@@ -497,6 +509,20 @@ h1 .hl{background:linear-gradient(90deg,var(--blue),#5b8def);-webkit-background-
   </div>
 </section>
 
+<!-- AWARDS -->
+<section class="sec" id="awards">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2 rv">Awards</h2>
+      <p class="sd rv">Recognition from bigbasket for individual contributions and innovative projects.</p>
+    </div>
+    <div class="awg">
+      <div class="aw rv"><div class="aw-ic" style="--c:#d97706"><i class="ph ph-trophy"></i></div><div class="aw-x">×2</div><div class="aw-t">Best Contributor Award</div><div class="aw-o">bigbasket · Customer Service</div><p>Awarded twice for individual contributions.</p></div>
+      <div class="aw rv"><div class="aw-ic" style="--c:#1f5fd6"><i class="ph ph-medal"></i></div><div class="aw-x">×2</div><div class="aw-t">Significant Contributor</div><div class="aw-o">bigbasket · Customer Service</div><p>Recognised twice for innovative projects: the <b>Disposition Code Revamp</b> and <b>Auto Address Mapping</b>.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- APPROACH -->
 <section class="sec sec-dark" id="approach">
   <div class="wrap">
@@ -518,20 +544,19 @@ h1 .hl{background:linear-gradient(90deg,var(--blue),#5b8def);-webkit-background-
 <!-- TIMELINE -->
 <section class="sec" id="timeline">
   <div class="wrap">
-    <div class="quote rv"><i class="ph ph-quotes"></i><p>The leaders who get this right won't be the ones who automate the most. They'll be the ones who know exactly where not to.<small>From my LinkedIn post on AI in support</small></p></div>
+    <div class="quote rv"><i class="ph ph-quotes"></i><p>80% of solving a problem is simply defining it clearly. Too often, we jump to solutions without understanding the real issue beneath the surface.<small>From my most-read LinkedIn post</small></p></div>
     <div class="sec-head">
       <h2 class="h2 rv">From the timeline</h2>
-      <p class="sd rv">LinkedIn posts worth a read, on seller experience, CX operations and practical AI.</p>
+      <p class="sd rv">My six most-read LinkedIn posts, on problem solving, leadership, CX and quick commerce.</p>
     </div>
     <div class="car rv">
       <div class="track" id="artTrack">
-        <div class="art"><div class="art-cover" style="--c1:#1f5fd6;--c2:#6366f1"><i class="ph ph-robot"></i><span>AI in support</span></div><div class="art-body"><div class="art-title">Where AI should and shouldn't act in support</div><div class="art-ex">The question to ask before automating anything is what happens when it's confidently wrong. The answer decides where AI acts alone, where it assists and where a person decides.</div><a class="art-link" href="https://www.linkedin.com/in/kaviyarasan-v-94635780/recent-activity/all/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
-        <div class="art"><div class="art-cover" style="--c1:#0a8f5c;--c2:#06b6d4"><i class="ph ph-arrow-u-up-left"></i><span>Seller experience</span></div><div class="art-body"><div class="art-title">The fastest way to reduce seller tickets</div><div class="art-ex">Fewer reasons to contact support beats faster support. Trace tickets back to where they actually began.</div><a class="art-link" href="https://www.linkedin.com/in/kaviyarasan-v-94635780/recent-activity/all/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
-        <div class="art"><div class="art-cover" style="--c1:#d97706;--c2:#f59e0b"><i class="ph ph-chart-line-up"></i><span>Running ops at scale</span></div><div class="art-body"><div class="art-title">Average TAT hides your angriest sellers</div><div class="art-ex">Why I track P90 next to the average, and the three fixes that cut escalations.</div><a class="art-link" href="https://www.linkedin.com/in/kaviyarasan-v-94635780/recent-activity/all/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
-        <div class="art"><div class="art-cover" style="--c1:#8b5cf6;--c2:#1f5fd6"><i class="ph ph-users-three"></i><span>CX leadership</span></div><div class="art-body"><div class="art-title">CX leaders should think like product managers</div><div class="art-ex">How a weekly loop between CX and Product took high-priority complaint TAT from 5 days to 3.</div><a class="art-link" href="https://www.linkedin.com/in/kaviyarasan-v-94635780/recent-activity/all/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
-        <div class="art"><div class="art-cover" style="--c1:#0f766e;--c2:#0a8f5c"><i class="ph ph-globe-hemisphere-east"></i><span>Multi-market ops</span></div><div class="art-body"><div class="art-title">One process. Three markets. Three results.</div><div class="art-ex">Running seller ops across the Gulf, and knowing which 10% to let vary.</div><a class="art-link" href="https://www.linkedin.com/in/kaviyarasan-v-94635780/recent-activity/all/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
-        <div class="art"><div class="art-cover" style="--c1:#be123c;--c2:#d97706"><i class="ph ph-arrow-counter-clockwise"></i><span>Reverse logistics</span></div><div class="art-body"><div class="art-title">Speed gets the customer. Reverse logistics protects the margin.</div><div class="art-ex">Lessons from bigbasket and Udaan on why dark stores struggle with returns.</div><a class="art-link" href="https://www.linkedin.com/in/kaviyarasan-v-94635780/recent-activity/all/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
-        <div class="art"><div class="art-cover" style="--c1:#334155;--c2:#1f5fd6"><i class="ph ph-book-open-text"></i><span>AI in operations</span></div><div class="art-body"><div class="art-title">Your help centre is about to get a new reader: AI agents</div><div class="art-ex">Vague policy wording used to cost a ticket. Soon it costs a wrong answer given at scale by an agent you don't control.</div><a class="art-link" href="https://www.linkedin.com/in/kaviyarasan-v-94635780/recent-activity/all/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
+        <div class="art"><div class="art-cover" style="--c1:#1f5fd6;--c2:#6366f1"><i class="ph ph-puzzle-piece"></i><span>Problem solving</span></div><div class="art-body"><div class="art-title">Problem Solving: The Ultimate Growth Lever in Every Career</div><div class="art-ex">80% of solving a problem is defining it clearly. A four-step framework: define it in one sentence, separate facts from assumptions, brainstorm, then test small and iterate.</div><a class="art-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7391692583804059648/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
+        <div class="art"><div class="art-cover" style="--c1:#be123c;--c2:#d97706"><i class="ph ph-lightning"></i><span>Quick commerce</span></div><div class="art-body"><div class="art-title">Vision, Speed & Customer Obsession: Lessons from Dunzo</div><div class="art-ex">What Dunzo's rise and shutdown teach about focus, unit economics, and growing only as fast as the business can handle.</div><a class="art-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7381186650011361280/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
+        <div class="art"><div class="art-cover" style="--c1:#0a8f5c;--c2:#06b6d4"><i class="ph ph-users-three"></i><span>Leadership</span></div><div class="art-body"><div class="art-title">Most leaders love solving problems. Great ones build problem-solvers.</div><div class="art-ex">Guiding questions, psychological safety and shared ownership: how leaders stop firefighting and start scaling.</div><a class="art-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7387084542131560450/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
+        <div class="art"><div class="art-cover" style="--c1:#d97706;--c2:#f59e0b"><i class="ph ph-shopping-cart"></i><span>E-commerce</span></div><div class="art-body"><div class="art-title">India's Festive E-commerce: 27% YoY Growth & a New Consumer Playbook</div><div class="art-ex">Quality over discounts, the rise of D2C and quick commerce, and non-metro demand: what the 2025 festive season means for CX teams.</div><a class="art-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7388428338807091200/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
+        <div class="art"><div class="art-cover" style="--c1:#8b5cf6;--c2:#1f5fd6"><i class="ph ph-strategy"></i><span>CX leadership</span></div><div class="art-body"><div class="art-title">CX leaders shouldn't just fix problems. They should think like product managers.</div><div class="art-ex">How a weekly loop between CX and Product took high-priority complaint TAT from 5 days to 3 and lifted CSAT by 12 points.</div><a class="art-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7381907033341730816/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
+        <div class="art"><div class="art-cover" style="--c1:#0f766e;--c2:#0a8f5c"><i class="ph ph-globe-hemisphere-east"></i><span>Quick commerce</span></div><div class="art-body"><div class="art-title">Global Quick Commerce: a $170B Opportunity, Powered by Sustainability</div><div class="art-ex">Fast delivery is now table stakes. Workforce stability and green logistics will decide who leads quick commerce next.</div><a class="art-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7389509567916716032/" target="_blank" rel="noopener">Read on LinkedIn <i class="ph ph-arrow-up-right"></i></a></div></div>
       </div>
       <div class="car-nav"><button class="car-btn" data-car="-1" aria-label="Previous"><i class="ph ph-arrow-left"></i></button><button class="car-btn" data-car="1" aria-label="Next"><i class="ph ph-arrow-right"></i></button></div>
     </div>
@@ -605,21 +630,6 @@ const PROJECTS=[
  links:[["tix","bq"],["asn","bq"],["rev","bq"],["bq","refresh"],["refresh","sql"],["sql","looker"],["looker","tl"],["looker","mgr"],["mgr","up"]],
  made:[["Data warehouse","Ticket, inbound and reverse-ops data in BigQuery."],["SQL models","Stage-wise TAT, P90, ageing buckets and cross-team queue flags."],["Dashboards","Looker views for team leads, managers and leadership reviews."],["Aged-ticket list","Every ticket past its threshold, each with a named owner, every day."]],
  note:"Used daily by the seller operations team across the UAE, KSA and Egypt.",tools:["Google BigQuery","Looker","SQL","Excel"]},
-{key:"linkedin-engine",name:"LinkedIn Content Engine",status:"In use",tone:"blue",
- one:"A weekly workflow that turns operations news and my own lessons into three LinkedIn posts a week, inside guardrails I set.",
- why:"Running a 40-person team leaves little time to write. Ad hoc posting meant weeks of silence, then a rushed post.",
- what:"It tracks news across e-commerce, quick commerce, CX and AI, and pairs it with lessons from my own operations work. It drafts posts in my voice with sources cited and lines them up for Tuesday to Thursday. I review and edit every post before it goes out.",
- benefits:["A steady three posts a week","News posts always cite their source","Guardrails: no confidential employer data, no criticism of employers, no 'open to work' posts","Every post is edited by me, so the voice stays mine","Topics stay on my lane: seller experience, CX operations and practical AI"],
- chain:[["ph-newspaper","Scan news & lessons","#6366f1"],["ph-target","Pick the angle","#3b82f6"],["ph-pencil-simple-line","Draft in my voice","#06b6d4"],["ph-shield-check","Guardrail check","#f59e0b"],["ph-user-check","I edit & approve","#8b5cf6"],["ph-calendar-check","Publish Tue–Thu","#10b981"]],
- loop:"What readers respond to shapes the next week's topics",
- dgTitle:"How a post gets made",dgSub:"News and my own experience go in. Guardrails and my edit sit between the draft and the post.",
- cols:3,zone:"Inputs",
- nodes:[["news","ph-newspaper","Industry news","e-com, q-com, CX, AI","#0891b2",1,1],["lessons","ph-notebook","My ops lessons","what I've run","#0891b2",2,1],["voice","ph-microphone","Voice guide","how I write","#0891b2",3,1],
-  ["angle","ph-target","Pick the angle","one idea per post","#1f5fd6",1,2],["draft","ph-pencil-simple-line","Draft","with sources cited","#d97706",2,2],["guard","ph-shield-check","Guardrails","no confidential data or criticism","#7c3aed",3,2],
-  ["edit","ph-user-check","I edit & approve","every post","#0a8f5c",2,3],["publish","ph-calendar-check","Publish","Tue, Wed, Thu","#0a8f5c",3,3]],
- links:[["news","angle"],["lessons","angle"],["angle","draft"],["voice","draft"],["draft","guard"],["guard","edit"],["edit","publish"]],
- made:[["Topic radar","News across e-commerce, quick commerce, CX and AI in operations."],["Voice guide","How I write: plain, practical and built around one idea."],["Guardrails","No confidential employer data, no criticism of employers, no 'open to work' posts."],["Schedule","Three slots a week, Tuesday to Thursday."]],
- note:"In use every week. I edit and approve every post.",tools:["Claude","LinkedIn","News sources"]},
 {key:"career-kit",name:"AI-Proof Career Kit",status:"Building",tone:"amber",
  one:"A ₹499 digital toolkit that helps mid-level IT professionals in India show their value in an AI-first workplace.",
  why:"Research showed real demand around anxiety about AI at work, and around the 'invisible contribution' problem at appraisal time.",
